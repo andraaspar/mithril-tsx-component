@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es2015.promise",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "newLine": "LF",
+    "declaration": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
