@@ -38,8 +38,8 @@ import { MithrilTsxComponent } from 'mithril-tsx-component'
 
 export interface IFooCompAttrs { }
 
-type Vnode = m.CVnode<IFooCompAttrs>
-type VnodeDOM = m.CVnodeDOM<IFooCompAttrs>
+type Vnode = m.Vnode<IFooCompAttrs, FooComp>
+type VnodeDOM = m.VnodeDOM<IFooCompAttrs, FooComp>
 
 export class FooComp extends MithrilTsxComponent<IFooCompAttrs> {
 
@@ -74,8 +74,8 @@ Use the following in VS Code’s TypeScript React snippets file:
 			"",
 			"export interface I$1Attrs { }",
 			"",
-			"type Vnode = m.CVnode<I$1Attrs>",
-			"type VnodeDOM = m.CVnodeDOM<I$1Attrs>",
+			"type Vnode = m.Vnode<I$1Attrs, $1>",
+			"type VnodeDOM = m.VnodeDOM<I$1Attrs, $1>",
 			"",
 			"export class $1 extends MithrilTsxComponent<I$1Attrs> {",
 			"",
