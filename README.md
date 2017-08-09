@@ -23,7 +23,7 @@ yarn add mithril-tsx-component
 	// ...
 	"compilerOptions": {
 		// ...
-		"jsx": "preserve",
+		"jsx": "react",
 		"jsxFactory": "m"
 	}
 }
