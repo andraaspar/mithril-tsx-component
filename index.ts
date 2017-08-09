@@ -1,10 +1,5 @@
 import * as m from 'mithril'
 
-// Get global or window
-const GLOBAL = new Function('return this')()
-// Make Mithril globally available: TS will remove import from .tsx files.
-GLOBAL.m = m
-
 export abstract class MithrilTsxComponent<A> implements m.ClassComponent<A> {
 	
 	// Required for type checking JSX attributes

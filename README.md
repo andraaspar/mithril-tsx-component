@@ -8,31 +8,13 @@
 
 ```
 npm i mithril-tsx-component
-npm i -D babel-core babel-plugin-transform-react-jsx
 ```
+Or:
 ```
 yarn add mithril-tsx-component
-yarn add -D babel-core babel-plugin-transform-react-jsx
 ```
 
 ## Setup
-
-### .babelrc
-
-```JSON
-{
-	// ...
-	"plugins": [
-		// ...
-		[
-			"transform-react-jsx",
-			{
-				"pragma": "m" 
-			}
-		]
-	]
-}
-```
 
 ### tsconfig.json
 
@@ -41,36 +23,9 @@ yarn add -D babel-core babel-plugin-transform-react-jsx
 	// ...
 	"compilerOptions": {
 		// ...
-		"jsx": "preserve"
+		"jsx": "preserve",
+		"jsxFactory": "m"
 	}
-}
-```
-
-### Webpack config
-
-```JS
-module.exports = {
-	// ...
-	resolve: {
-		extensions: ['.ts', '.tsx', '.js', '.jsx'],
-		modules: [
-			'node_modules',
-			// ...
-		]
-	},
-	module: {
-		loaders: [
-			{
-				test: /\.tsx?$/,
-				loader: 'awesome-typescript-loader',
-				options: {
-					useBabel: true,
-				},
-			},
-			// ...
-		]
-	},
-	// ...
 }
 ```
 
