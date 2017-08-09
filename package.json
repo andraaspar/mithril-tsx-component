@@ -1,6 +1,6 @@
 {
   "name": "mithril-tsx-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TSX base class & settings for Mithril.",
   "author": "András Parditka",
   "repository": {
