@@ -1,7 +1,7 @@
 /// <reference types="mithril" />
 import * as m from 'mithril';
 export declare abstract class MithrilTsxComponent<A> implements m.ClassComponent<A> {
-    private __tsx_attrs: A & { key?: number | string };
+    private __tsx_attrs: A & m.Lifecycle<A, this> & { key?: string | number };
     abstract view(vnode: m.Vnode<A, this>): m.Children | null | void;
 }
 declare global  {

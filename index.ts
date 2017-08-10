@@ -3,7 +3,7 @@ import * as m from 'mithril'
 export abstract class MithrilTsxComponent<A> implements m.ClassComponent<A> {
 	
 	// Required for type checking JSX attributes
-	private __tsx_attrs: A & { key?: number | string }
+	private __tsx_attrs: A & m.Lifecycle<A, this> & { key?: string | number }
 
 	// Copy of m.ClassComponent<A>.view required by TS
 	abstract view(vnode: m.Vnode<A, this>): m.Children | null | void
