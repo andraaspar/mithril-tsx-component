@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var MithrilTsxComponent = (function () {
+var MithrilTsxComponent = /** @class */ (function () {
     function MithrilTsxComponent() {
     }
     return MithrilTsxComponent;

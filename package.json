@@ -1,6 +1,6 @@
 {
   "name": "mithril-tsx-component",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "TSX base class & settings for Mithril.",
   "author": "András Parditka",
   "repository": {
@@ -13,13 +13,13 @@
   "homepage": "https://github.com/andraaspar/mithril-tsx-component#readme",
   "license": "MIT",
   "peerDependencies": {
-    "mithril": "^1.1.3"
+    "mithril": ">=1.1.3"
   },
   "devDependencies": {
     "@types/mithril": "^1.1.7",
-    "mithril": "^1.1.3",
+    "mithril": ">=1.1.3",
     "rimraf": "^2.6.1",
-    "typescript": "^2.4.2"
+    "typescript": "^3.2.4"
   },
   "scripts": {
     "compile": "yarn && rimraf *.js *.d.ts && tsc && echo \"Now edit index.d.ts and add type to MithrilTsxComponent<A>.__tsx_attrs !\""
